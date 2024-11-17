@@ -1,0 +1,2 @@
+# Python-Linear-Regression-and-Polynomial-Curve-Fitting
+This project consists of 2 python programs. One allows the user to input a set of data points, and the range of slopes and intercepts they want to test. The program finds the optimal regression line by calculating the error of each slope, intercept combination. The second program performs polynomial curve fitting on user provided data points.
