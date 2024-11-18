@@ -53,7 +53,7 @@ print(f'The linear regression line for this set of data is: y = {best_slope:.2f}
 fig = plt.figure() #Creates a figure for the 3D subplot
 ax = fig.add_subplot(121, projection = '3d') #Create a 3D subplot
 ax.plot_surface(X, Y, Z, cmap = 'viridis', alpha = 0.75) #Plot the graph
-ax.scatter(best_slope, best_intercept, smallest_error, label = f'SSE = {smallest_error}\nŷ={best_slope:.2f}{best_intercept:.2f}', color = 'r')
+ax.scatter(best_slope, best_intercept, smallest_error, label = f'SSE = {smallest_error}\nŷ={best_slope:.2f}+{best_intercept:.2f}', color = 'r')
 ax.set_title('3D surface plot of SSE as a function of m and b')
 ax.set_xlabel('X axis (slope)')
 ax.set_ylabel('Y axis (y-Intercept)')
