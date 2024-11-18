@@ -40,7 +40,7 @@ for i in range(X.shape[0]): #Iterate through slopes
         model = X[i, j] * x + Y[i, j] #Create a model foe each slope, intercept pair
         sse = np.sum((model - y) ** 2) #Calculate SSE for each model
         Z[i, j] = sse #add each SSE to the SSE array
-smallest_error = 1000000
+smallest_error = Z[0][0]
 for i in range(len(Z[0])):
     for j in range(len(Z[1])):
         if Z[i][j] < smallest_error:
